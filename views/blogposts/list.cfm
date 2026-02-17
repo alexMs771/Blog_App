@@ -12,8 +12,8 @@
             <div class="container-fluid " style="font-family: 'Times New Roman', Times, serif; color:#917e7e;letter-spacing: 1px;">
                 <h6 class="text-white h4" style="margin: 1px 0px 5px 10px;">CF Mitrah Blog > Overview</h6>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="index.cfm?action=logout" id="logoutbutton" class="btn btn-white text-dark bg-light rounded-pill shadow">Logout</a>
-                    <a href="index.cfm?action=viewSite" id="siteBtn" class="btn  text-dark bg-light rounded-pill shadow">view the site</a>
+                    <a href="index.cfm?action=logout.logout" id="logoutbutton" class="btn btn-white text-dark bg-light rounded-pill shadow">Logout</a>
+                    <a href="index.cfm?action=overview.dashboard" id="siteBtn" class="btn  text-dark bg-light rounded-pill shadow">view the site</a>
                 </div>
             </div>
         </nav>
@@ -21,19 +21,14 @@
         <div class="col-2 bg-light shadow p-3 " style="height: 100vh;">
             <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
             <a class="p-1 rounded" href="index.cfm?action=overview.dashboard">Overview</a>
-            <a class="p-1 rounded" href="index.cfm?action=posts.posts">Posts</a>
+            <a class="p-1 rounded" href="index.cfm?action=blogposts.list">Posts</a>
             <a class="p-1 rounded" href="index.cfm?action=categories.categories">Categories</a>
             <a class="p-1 rounded" href="index.cfm?action=logout.logout">Logout</a>
             </div>
         </div>
         <cfoutput>
-        <div class="col-10 bg-light shadow p-3" style="height: 100vh;">
-           <cfif structKeyExists( session, "auth" ) and session.auth.isLoggedIn>
-                <h2 class="text-center text-primary">Welcome, #session.auth.username#!</h2>
-            <cfelse>
-                <h2 class="text-center text-danger"></h2>
-            </cfif>
-        </div>
+        <div class="col-10 bg-light shadow" style="height: 100vh;">
+            </div>
         </cfoutput>
     </div>
 </body>
