@@ -39,8 +39,8 @@
                     <div class="p-3">
                         <h5>This blog has:</h5>
                         <ul>
-                            <li>0 Published Posts</li>
-                            <li>0 Comments</li>
+                            <li> Published Posts</li>
+                            <li> Comments</li>
                         </ul>
                         <p>The first post created on this blog will appear here.</p>
                     </div>
