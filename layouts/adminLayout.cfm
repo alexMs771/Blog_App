@@ -17,21 +17,18 @@
                 </div>
             </div>
         </nav>
-        <!---#body# content area--->
        <div class="row gap-0">
-        <div class="col-2 bg-light shadow p-3 " style="height: 100vh;">
-            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-            <a class="p-1 rounded" href="index.cfm?action=overview.dashboard">Overview</a>
-            <a class="p-1 rounded" href="index.cfm?action=blogposts.list">Posts</a>
-            <a class="p-1 rounded" href="index.cfm?action=categories.categories">Categories</a>
-            <a class="p-1 rounded" href="index.cfm?action=logout.logout">Logout</a>
+        <div class="col-2 bg-light shadow p-3" style="height: 100vh;">
+            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center btn-group-vertical">
+            <a class="p-1 text-dark btn h5" href="index.cfm?action=overview.dashboard">Overview</a>
+            <a class="p-1 text-dark btn h5" href="index.cfm?action=blogposts.list">Posts</a>
+            <a class="p-1 text-dark btn h5" href="index.cfm?action=categories.categories">Categories</a>
+            <a class="p-1 text-dark btn h5" href="index.cfm?action=logout.logout">Logout</a>
             </div>
         </div>
         <cfoutput>
-        <div class="col-10 bg-light shadow" style="height: 100vh;">
-        </div>
+            #body#
         </cfoutput>
-        <!---#body# content area--->
     </div>
 </body>
 </html>

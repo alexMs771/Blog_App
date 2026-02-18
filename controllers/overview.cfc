@@ -1,9 +1,9 @@
 component accessors="true" output="false"{
-    function init(fw) {
+    remote function init(fw) {
         variables.fw = fw;
         return this;
     }
-    function dashboard( rc ) {
+    remote function dashboard(struct rc )  {
         rc.postCount = 10;
         rc.commentCount = 5;
     }

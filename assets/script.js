@@ -22,7 +22,6 @@ $(document).ready(function () {
         });
         if($("#username").val()=="admin" && $("#password").val()=="admin"){
             window.location.href="index.cfm?action=overview.dashboard";
-            return;
         }
     });
 });
