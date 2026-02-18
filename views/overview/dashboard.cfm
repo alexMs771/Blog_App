@@ -46,9 +46,12 @@
                 </div>
 
             </div>
-            <div>
-            <p class="text-secondary">Categories</p>
-            <div>
+            <div class="col-4 bg-light  border border-secondary-subtle" style="height:220px">
+                <div class="bg-primary p-3 border " style="height: 50px;"><h5 class="text-white">Categories</h5></div>
+                <div class="p-3">
+                    <h5 class="h6">You have no categories yet.</h5>
+                    <p class="h6">Categories are used to group related posts together. The first category created on this blog will appear here.</p>
+            </div>
         </div>
     </cfoutput>
 <!--- body content area--->

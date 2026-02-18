@@ -1,3 +1,7 @@
+<cfscript>
+disableLayout();
+</cfscript>
+
 <!DOCTYPE html>
 <html>
 <head>

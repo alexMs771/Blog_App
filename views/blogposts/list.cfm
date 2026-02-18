@@ -51,7 +51,7 @@
                 <td>Title</td>
                 <td>Date</td>
                 <td>Status</td>
-                <td>Comments</td>
+                <td><a href="index.cfm?action=comments.list" class="text-secondary">0</a></td>
                 <td><a href="" class="text-secondary">Delete</a></td>
             </tr>
         </table>
