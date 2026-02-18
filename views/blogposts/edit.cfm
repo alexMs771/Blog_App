@@ -28,7 +28,7 @@
     <cfoutput>
     <div class="col-10 bg-light shadow" style="height: 100vh;">
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-2 h4">
-            <a href="index.cfm?action=blogposts.create" id="newCategoryBtn" class="btn">New post</a>
+            <a href="index.cfm?action=blogposts.newpost" id="newCategoryBtn" class="btn">New post</a>
             <a href="index.cfm?action=blogposts.edit" id="editCategoryBtn" class="btn">Edit post</a>
         </div>
         <nav class="navbar bg-primary shadow">
