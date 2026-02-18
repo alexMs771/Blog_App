@@ -33,29 +33,44 @@
         </div>
         <nav class="navbar bg-primary shadow">
             <div class="container-fluid " style="font-family: 'Times New Roman', Times, serif;">
-                <h6 class="text-white h4">All Posts</h6>
+                <h6 class="text-white h4">Editing </h6>
             </div>
         </nav><br>
-        <div><a href="" class="btn btn-secondary">Create New Post</a></div><br>
-        <table class="table table-bordered">
-            <tr class="border border-secondary-subtle">
-                <th scope="col">Edit</th>
-                <th scope="col">Title</th>
-                <th scope="col">Date</th>
-                <th scope="col">Status</th>
-                <th scope="col">Comments</th>
-                <th scope="col">Delete</th>
-            </tr>
-            <tr>
-                <td><a href="" class="text-secondary">Edit</a></td>
-                <td>Title</td>
-                <td>Date</td>
-                <td>Status</td>
-                <td>Comments</td>
-                <td><a href="" class="text-secondary">Delete</a></td>
-            </tr>
-        </table>
-     </div>
+       <div class="container mt-4 p-4 d bg-white d-flex gap-2 " style="height: 50vh;" cols="2">
+            <div class="col-8 border p-2" style="height: 45vh;">
+                <div class="mb-3" cols="2">
+                    <label for="exampleFormControlInput1" class="form-label text-dark">Title<span class="text-secondary">(required)</span></label><br>
+                    <input type="text" class="" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-dark">Content<span class="text-secondary">(required)</span></label><br>
+                    <textarea id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-dark">Excerpt</label><br>
+                    <textarea id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="col-4 border p-2" style="height: 45vh;">
+                <div class="mb-3" cols="2"><br>
+                    <p class="h6">Fill this post under :</p>
+                    <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault">
+                    Category 1
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                <label class="form-check-label" for="checkChecked">
+                    Category 2
+                </label>
+                </div>
+                <div class="mb-3" cols="2">
+                    <label for="exampleFormControlInput1" class="form-label text-dark">New category</label><br>
+                    <input type="text" class="" id="exampleFormControlInput1">
+                </div>
+            </div>
 
     </cfoutput>
 <!--- body content area--->
