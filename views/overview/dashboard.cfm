@@ -9,7 +9,7 @@
 <body class="bg-secondary">
     <div>
         <nav class="navbar bg-dark bg-gradient shadow">
-            <div class="container-fluid " style="font-family: 'Times New Roman', Times, serif; color:#917e7e;letter-spacing: 1px;">
+            <div class="container-fluid " style="font-family: 'Times New Roman', Times, serif; color:917e7e;letter-spacing: 1px;">
                 <h6 class="text-white h4" style="margin: 1px 0px 5px 10px;">CF Mitrah Blog > Overview</h6>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <a href="index.cfm?action=logout.logout" id="logoutbutton" class="btn btn-white text-dark bg-light rounded-pill shadow">Logout</a>
@@ -39,8 +39,8 @@
                 <div class="p-3">
                     <h5>This blog has:</h5>
                     <ul>
-                        <li>#rc.postcount# Published Posts</li>
-                        <li>#rc.commentcount# Comments</li>
+                       <li> Published Posts</li>
+                        <li> Comments</li>
                     </ul>
                     <p>The first post created on this blog will appear here.</p>
                 </div>
@@ -58,5 +58,3 @@
 </div>
 </body>
 </html>
-<cfdump var="#session#" label="Session Scope">
-<cfdump var="#rc#" label="Request Scope">

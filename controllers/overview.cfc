@@ -3,7 +3,7 @@ component accessors="true" output="false"{
         variables.fw = fw;
         return this;
     }
-    if session.adminLogged EQ true {
+    if session.admin EQ true {
         variables.framework.layout = "adminLayout";
     } else if session.userLogged EQ true {
         variables.framework.layout = "userLayout";

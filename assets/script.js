@@ -12,17 +12,21 @@ $(document).ready(function () {
                 username: $("#username").val(),
                 password: $("#password").val()
             },
-            success:function(exists){
-                if(exists){
-                    window.location.href = "index.cfm?action=posts.list";
-                } else {
-                    $("#msg").text("Invalid Username or Password");
+            success: function(res){
+ 
+                if(res.role == "admin"){
+                    window.location.href="index.cfm?action=posts.list";
                 }
+                else if(res.role == "user"){
+                    window.location.href="index.cfm?action=posts.list";
+                }
+                else{
+                    $("#msg").text("Invalid Credentials");
+                }
+ 
             }
         });
-        if($("#username").val()=="admin" && $("#password").val()=="admin"){
-            window.location.href="index.cfm?action=overview.dashboard";
-        }
+ 
     });
+ 
 });
-
