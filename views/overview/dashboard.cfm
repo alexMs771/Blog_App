@@ -39,8 +39,8 @@
                 <div class="p-3">
                     <h5>This blog has:</h5>
                     <ul>
-                        <li> Published Posts</li>
-                        <li> Comments</li>
+                        <li>#rc.postcount# Published Posts</li>
+                        <li>#rc.commentcount# Comments</li>
                     </ul>
                     <p>The first post created on this blog will appear here.</p>
                 </div>
@@ -58,3 +58,5 @@
 </div>
 </body>
 </html>
+<cfdump var="#session#" label="Session Scope">
+<cfdump var="#rc#" label="Request Scope">

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,3 +21,5 @@
     </div>
 </body>
 </html>
+<cfdump var="#session#" label="Session Scope">
+<cfdump var="#rc#" label="Request Scope">

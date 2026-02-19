@@ -20,3 +20,8 @@
 </body>
 </cfoutput>
 </html>
+<cfdump var="#session#" label="Session Scope"><br>
+<cfdump var="#rc#" label="Request Scope"><br>
+<cfdump var="#url#" label="URL Scope"><br>
+
+

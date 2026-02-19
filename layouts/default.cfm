@@ -1,3 +1,5 @@
-<cfoutput>
-    #body#
-</cfoutput>
+
+
+    <cfoutput>
+        #body#
+    </cfoutput>
